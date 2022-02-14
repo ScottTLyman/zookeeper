@@ -1,4 +1,4 @@
-import { Alert } from "bootstrap";
+
 
 export class Alligator {
   constructor(name, gender, weight, tailLengthInches, canFly, hasClaws, hasScales) {
@@ -8,13 +8,17 @@ export class Alligator {
     this.tailLengthInches = tailLengthInches;
     this.canFly = canFly;
     this.hasClaws = hasClaws;
-    this.hasScales = hasScales
+    this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying' : ''} ${this.constructor.name}, says hello`)
+  }
+
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Bobcat {
@@ -27,11 +31,15 @@ export class Bobcat {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying' : ''} ${this.constructor.name}, says hello`)
+  }
+
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Cheetah {
@@ -44,11 +52,15 @@ export class Cheetah {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying' : ''} ${this.constructor.name}, says hello`)
+  }
+
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Dolphin {
@@ -61,11 +73,15 @@ export class Dolphin {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying' : ''} ${this.constructor.name}, says hello`)
+  }
+
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Elephant {
@@ -77,12 +93,18 @@ export class Elephant {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  } hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''}${this.constructor.name}, says hello`)
   }
+  get animalTemplate() {
+    return `<p>${this.name} the${this.canFly ? 'flying' : ''} ${this.constructor.name}, says hello.</p>`
+  }
+
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Falcon {
@@ -99,7 +121,7 @@ export class Falcon {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Giraffe {
@@ -116,7 +138,7 @@ export class Giraffe {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Hawk {
@@ -133,7 +155,7 @@ export class Hawk {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Iguana {
@@ -150,7 +172,7 @@ export class Iguana {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Jaguar {
@@ -167,7 +189,7 @@ export class Jaguar {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Koala {
@@ -184,7 +206,7 @@ export class Koala {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Lemur {
@@ -201,7 +223,7 @@ export class Lemur {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Marmoset {
@@ -218,7 +240,7 @@ export class Marmoset {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Narwhal {
@@ -235,7 +257,7 @@ export class Narwhal {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Octopus {
@@ -252,7 +274,7 @@ export class Octopus {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Panther {
@@ -269,7 +291,7 @@ export class Panther {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Quail {
@@ -286,7 +308,7 @@ export class Quail {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Raccoon {
@@ -303,7 +325,7 @@ export class Raccoon {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Sable {
@@ -320,7 +342,7 @@ export class Sable {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Tiger {
@@ -337,7 +359,7 @@ export class Tiger {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Urchin {
@@ -354,7 +376,7 @@ export class Urchin {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Vicuna {
@@ -371,7 +393,7 @@ export class Vicuna {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Wallaby {
@@ -388,7 +410,7 @@ export class Wallaby {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Xeme {
@@ -405,7 +427,7 @@ export class Xeme {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Yak {
@@ -422,7 +444,7 @@ export class Yak {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }
 export class Zebra {
@@ -439,6 +461,6 @@ export class Zebra {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
   speak(noise) {
-    alert(`The ${this.constructor.name} says ${noise}!`)
+    console.log(`The ${this.constructor.name} says ${noise}!`)
   }
 }

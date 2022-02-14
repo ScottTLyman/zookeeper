@@ -11,6 +11,7 @@ function _draw() {
   document.getElementById("app").innerHTML = /*html*/`
   <div class="my-3">
     <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.addValue()">Add Value</button>  
+    <button class="btn btn-secondary text-white elevation-2" onclick="app.valuesController.sayHelloToAnimals()">Say Hello</button>  
     <div class="values d-flex flex-wrap my-3">
       ${cardsTemplate}
     </div>
@@ -24,7 +25,9 @@ export class ValuesController {
     ProxyState.on("values", _draw);
     _draw()
   }
-
+  sayHelloToAnimals() {
+    valuesService.sayHelloToAnimals()
+  }
   addValue() {
     valuesService.addValue()
   }
