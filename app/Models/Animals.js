@@ -94,11 +94,11 @@ export class Elephant {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   } hello() {
-    console.log(`${this.name} the${this.canFly ? ' flying ' : ''}${this.constructor.name}, says hello`)
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
-  get animalTemplate() {
-    return `<p>${this.name} the${this.canFly ? 'flying' : ''} ${this.constructor.name}, says hello.</p>`
-  }
+  //  get animalTemplate() {
+  // return `<p>${this.name} the${this.canFly ? 'flying' : ''} ${this.constructor.name}, says hello.</p>`
+  // }
 
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -108,7 +108,7 @@ export class Elephant {
   }
 }
 export class Falcon {
-  constructor(name, gender, weight, tailLengthInches, canFly, hasClaws) {
+  constructor(name, gender, weight, tailLengthInches, canFly, hasClaws, hasScales) {
     this.name = name;
     this.gender = gender;
     this.weight = weight;
@@ -116,6 +116,8 @@ export class Falcon {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  } hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -134,6 +136,9 @@ export class Giraffe {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -150,6 +155,9 @@ export class Hawk {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -168,6 +176,9 @@ export class Iguana {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -184,6 +195,9 @@ export class Jaguar {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -202,6 +216,9 @@ export class Koala {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -218,6 +235,9 @@ export class Lemur {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -236,6 +256,9 @@ export class Marmoset {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -252,6 +275,9 @@ export class Narwhal {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -270,6 +296,9 @@ export class Octopus {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -286,6 +315,9 @@ export class Panther {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -304,6 +336,9 @@ export class Quail {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -320,6 +355,9 @@ export class Raccoon {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -338,6 +376,9 @@ export class Sable {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -354,6 +395,9 @@ export class Tiger {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -372,6 +416,9 @@ export class Urchin {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -388,6 +435,9 @@ export class Vicuna {
       this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -406,6 +456,9 @@ export class Wallaby {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -422,6 +475,9 @@ export class Xeme {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
@@ -440,6 +496,9 @@ export class Yak {
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
   }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
+  }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
   }
@@ -456,6 +515,9 @@ export class Zebra {
     this.canFly = canFly;
     this.hasClaws = hasClaws;
     this.hasScales = hasScales;
+  }
+  hello() {
+    console.log(`${this.name} the${this.canFly ? ' flying ' : ''} ${this.constructor.name}, says hello`)
   }
   eat(food) {
     console.log(`Chomp chomp all the ${food}ies.`)
